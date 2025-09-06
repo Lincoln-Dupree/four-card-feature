@@ -6,6 +6,7 @@
   --Grey-500: hsl(234, 12%, 34%);
   --Grey-400: hsl(212, 6%, 44%);
   --White: hsl(0, 0%, 100%);
+  --background-color: hsl(0, 0%, 98%);
 }
 
 * {
@@ -15,4 +16,132 @@
   font-size: 15px;
   font-family: "Poppins", sans-serif;
   /* Weights: 200, 400, 600 */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+.main-container {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.header-container {
+  /* background-color: coral; */
+  max-width: 50%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.top-sub-header {
+  font-weight: 200;
+  color: var(--Grey-400);
+  font-size: 2.5rem;
+}
+
+.header {
+  font-weight: 600;
+  color: var(--Grey-500);
+  font-size: 2.5rem;
+}
+
+.sub-header {
+  font-weight: 400;
+  color: var(--Grey-400);
+  padding-top: 1rem;
+}
+
+.cards-container {
+  /* background-color: aqua; */
+  width: auto;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.card {
+  background-color: var(--White);
+  box-shadow: 0px 1rem 12px rgb(0, 0, 0, 12.5%);
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 0.5rem;
+}
+
+.card-top {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+
+.card-title {
+  font-weight: 600;
+  color: var(--Grey-500);
+  font-size: 1.5rem;
+}
+
+.card-text {
+  color: var(--Grey-400);
+}
+
+.supervisor-container .icon-container {
+  justify-content: flex-end;
+}
+
+.supervisor-container {
+  width: 33%;
+  height: 50%;
+  border-top: 0.5rem solid var(--Cyan);
+}
+
+.team-karma-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 33%;
+  height: 100%;
+}
+
+.team-container {
+  width: 100%;
+  height: 50%;
+  border-top: 0.5rem solid var(--Red);
+}
+
+.karma-container {
+  width: 100%;
+  height: 50%;
+  border-top: 0.5rem solid var(--Orange);
+}
+
+.calculator-container {
+  width: 33%;
+  height: 50%;
+  border-top: 0.5rem solid var(--Blue);
 }
